@@ -1,0 +1,12 @@
+[package]
+name = "ogg_vorbis_ref"
+version = "0.0.1"
+authors = ["pingw33n <d@emphased.net>"]
+description = "libogg and libvorbis wrappers for pure_vorbis reference tests"
+license = "MIT"
+repository = "https://github.com/pingw33n/ogg_vorbis_ref"
+
+[dependencies]
+libc = "0.2.15"
+ogg-sys = "0.0.9"
+vorbis-sys = "0.0.8"
