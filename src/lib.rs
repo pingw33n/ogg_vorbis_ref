@@ -271,7 +271,7 @@ impl Drop for DecoderSynthState {
 }
 
 #[repr(C)]
-pub struct mdct_lookup {
+struct mdct_lookup {
   n: c_int,
   log2n: c_int,
 
