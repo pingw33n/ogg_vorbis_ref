@@ -1,6 +1,6 @@
 [package]
 name = "ogg_vorbis_ref"
-version = "0.0.2"
+version = "0.0.3"
 authors = ["pingw33n <d@emphased.net>"]
 description = "libogg and libvorbis wrappers for pure_vorbis reference tests"
 license = "MIT"

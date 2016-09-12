@@ -67,7 +67,7 @@ impl<R: Read> OggRefDecoder<R> {
                 try!(Self::page_out(&mut self.reader, &mut *self.sync, &mut *stream.page, self.buf_len));
                 try!(Self::page_in(&mut *stream.state, &mut *stream.page));
             } else {
-                self.eos = unsafe { ogg_page_eos(&*stream.page) } != 0;
+                self.eos = stream.packet.e_o_s != 0;
                 return Ok(true);
             }
         }
